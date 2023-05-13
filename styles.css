@@ -1,0 +1,210 @@
+/* General visuals */
+.background {
+    background-color: #464646;
+}
+
+.banner {
+    background-color: #2d2d2d;
+    color: #fff;
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    padding: 2rem 6rem;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.sidebarLink {
+    color: #fff;
+    display: inline-block;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 1.1rem;
+}
+
+.link {
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 1.1rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.titleText {
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.line {
+  color: #fff;
+  width: 80%;
+  margin: auto;
+}
+
+.subtitle {
+  color: #fff;
+  text-align: left;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  font-size: 1.25rem;
+}
+
+.bodyText {
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    font-size: 1.1rem;
+}
+
+.text {
+  color: #fff;
+  text-align: left;
+  overflow: hidden;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  font-size: 1.1rem;
+}
+
+.image {
+    border-radius: 0.5rem;
+    width: 85%;
+    height: auto;
+    display: inline-block;
+    margin: auto;
+}
+
+.video {
+  border-radius: 0.5rem;
+  width: 85%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.home {
+  fill: #fff;
+  width: 3rem;
+  height: auto;
+  position: absolute;
+  top: 18px;
+  right: 14px;
+}
+
+
+/* Color for when you click over clickable objects */
+.link:hover, .sidebarLink:hover, .sidebar a:hover {
+    color: #90bee6;
+ }
+
+.openButton:hover {
+  background-color: #90bee6;
+}
+
+.home:hover {
+  fill: #90bee6
+}
+
+
+/* Sidebar Visuals */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+ 
+.sidebar .closeButton {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openButton {
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+  position: absolute;
+  top: 18px;
+}
+
+#content {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+      padding-top: 15px;
+  }
+  .sidebar a {
+      font-size: 18px;
+  }
+}
+
+
+/* Columns */ 
+.dropdown {
+  width: 90%;
+  background-color: yellow;
+  margin: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.wrapper {
+  width: 90%;
+  margin: auto;
+  height: auto;
+  display: flex;
+}
+
+.left {
+  width: 50%;
+  background-color: rgba(0, 128, 0, 0); /*left column visual*/
+}
+
+.right {
+  width: 50%;
+  background-color: rgba(173, 216, 230, 0); /*right column visual*/
+}
+
+
+/* "max-width" sets when page will turn to phone view */
+@media screen and (max-width: 800px) {
+  .left {
+    float: none;
+    width: 100%;
+  }
+
+  .right {
+    float: none;
+    width: 100%;
+  }
+  
+  .wrapper {
+  width: 90%;
+  margin: auto;
+  height: auto;
+  display: block;
+  }
+}
